@@ -1,3 +1,7 @@
+/* Navbar */
+html {
+  scroll-behavior: smooth;
+}
 .zulu {
   background-color: #411f5c;
   width: 100%;
@@ -6,23 +10,91 @@
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
 }
+#navbar.zulu a {
+  text-decoration: none;
+  color: #d1c40d;
+}
+
 body {
   background-color: #16162d;
 }
+/* TEXTO */
 h1 {
+  font-family: "Alfa Slab One", cursive;
   color: #66ffff;
-  padding-right: 12px;
+  padding-right: 5px;
   text-align: center;
+  font-size: 4rem;
 }
+
+.nombre {
+  font-family: "Alfa Slab One", cursive;
+}
+
 h2 {
   color: #ffcc00;
   text-align: center;
+  font-family: "Alfa Slab One", cursive;
+}
+p {
+}
+
+.informacion {
+  font-family: "Muli", sans-serif;
+}
+
+.collapse {
+  font-family: "Kaushan script", cursive;
+}
+
+.card-deck {
+  font-family: "Muli", sans-serif;
+}
+/* carrusel */
+.carousel-indicators {
+  bottom: -4rem;
+}
+
+.carousel-indicators li {
+  background-color: #411f5c;
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+}
+/* pie de pagina */
+.paginapie {
+  background-color: #411f5c;
+}
+/* estilos */
+.linea {
+  border-bottom: 10px solid #d1c40d;
+}
+.linea2 {
+  border-bottom: 5px solid #d1c40d;
+}
+.tooltip-inner {
+  background-color: #16162d;
+  border-bottom-color: #f00;
+}
+
+.trabajo {
+  width: 90%;
+  height: 80px;
+  object-fit: cover;
+}
+.sombra img {
+  box-shadow: 2px 2px 2px #6f42c1;
+}
+
+#navbarNav a {
+  color: #ffffff;
+  text-shadow: 0 0 3px #d1c40d, 0 0 5px #16162d;
 }
 #navbar {
   transition: top 0.3s;
 }
 .navbar-brand {
-  color: #00c3ff;
+  color: #d1c40d;
   font-family: "Alfa Slab One", cursive;
   font-size: 2rem;
 }
@@ -33,11 +105,24 @@ h2 {
 }
 @-moz-keyframes neon4 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00c3ff,
-      0 0 70px #00c3ff, 0 0 80px #00c3ff, 0 0 100px #00c3ff, 0 0 150px #00c3ff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #d1c40d,
+      0 0 70px #d1c40d, 0 0 80px #d1c40d, 0 0 100px #d1c40d, 0 0 150px #d1c40d;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00c3ff,
-      0 0 35px #00c3ff, 0 0 40px #00c3ff, 0 0 50px #00c3ff, 0 0 75px #00c3ff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #d1c40d,
+      0 0 35px #d1c40d, 0 0 40px #d1c40d, 0 0 50px #d1c40d, 0 0 75px #d1c40d;
   }
+}
+.piepagina h2 {
+}
+.icon a:hover {
+  -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon4 1.5s ease-in-out infinite alternate;
+  animation: neon4 1.5s ease-in-out infinite alternate;
+}
+.icon a {
+  color: #d1c40d;
+  text-decoration: none;
+  text-shadow: 0 0 3px #d1c40d, 0 0 5px #16162d;
+  transition: ease-in-out 0.5s;
 }

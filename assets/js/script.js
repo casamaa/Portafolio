@@ -8,3 +8,6 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 };
+$(function() {
+  $('[data-toggle="tooltip"]').tooltip();
+});
